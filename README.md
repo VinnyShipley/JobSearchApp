@@ -16,6 +16,6 @@ TBD
 
 01-06-2023 Project start
 
-## Collaborators:
+## Collaborators
 
 Vinny Shipley
