@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+
+<h2>Job Spreadsheet</h2>
+
+<table>
+
+  <tr>
+    <th>Company</th>
+    <th>Role Title</th>
+    <th>Location</th>
+    <th>Salary Range</th>
+    <th>Remote</th>
+    <th>On Site</th>
+    <th>Hybrid</th>
+    <th>Application Date</th>
+    <th>Follow-up date</th>
+  </tr>
+  {% for job in job_list %}
+  <tr>
+    <td>{{job.company}}</td>
+    <td>{{job.title}}</td>
+    <td>{{job.location}}</td>
+    <td>{{job.salary_range}}</td>
+    <td>{{job.remote}}</td>
+    <td>{{job.on_site}}</td>
+    <td>{{job.hybrid}}</td>
+    <td>{{job.application_date}}</td>
+    <td>{{job.follow_up_date}}</td>
+  </tr>
+
+{% endfor %}
+</ul>
+
+{% endblock content %}
