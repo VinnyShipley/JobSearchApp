@@ -1,11 +1,6 @@
-# Take 
+import mechanize
 
-# Link the job posting page
-
-# Regex to find the params
-
-# Move on to next job
-
-# Move on to next page
-
-# 
+browser = mechanize.Browser()
+browser.set_handle_robots(False)
+response = browser.open('http://www.google.com')
+print(response.code)
