@@ -1,8 +1,9 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
-options = webdriver.ChromeOptions()
-options.binary_location = "C:\Users\vinny\AppData\Local\Google\Chrome\User Data\Default"
-chrome_driver_binary = "/usr/local/bin/chromedriver"
-driver = webdriver.Chrome(chrome_driver_binary, chrome_options=options)
-
-
+options = Options()
+options.binary_location = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+driver = webdriver.Chrome(chrome_options = options, executable_path="C:\Program Files (x86)\chromedriver.exe")
+driver.get('http://google.com/')
+print("Chrome Browser Invoked")
+driver.quit()
